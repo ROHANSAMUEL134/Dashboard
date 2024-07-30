@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="left-header">
+            <div class="brand-logo">
+                <img src="logo.jpeg" id="logo">
+                <span id="brand">Focus Logic</span>
+            </div>
+            <nav>
+                <ul>
+                    <li class="item">
+                        <i class="fa fa-line-chart"></i>
+                        Analytics
+                    </li>
+                    <li class="item">
+                        <i class="fa fa-shopping-bag"></i>
+                        Products
+                    </li>
+                    <li class="item">
+                        <i class="fa fa-envelope"></i>
+                        Messages
+                    </li>
+                    <li class="item">
+                        <i class="fa fa-user"></i>
+                        Customers
+                    </li>
+                </ul>
+            </nav>
+            <hr id="left-container-equator">
+            <ul>
+                <li class="item">
+                    <i class="fa fa-gear"></i>
+                    Settings
+                </li>
+                <li class="item">
+                    <i class="fa fa-backward"></i>
+                    Sign Out
+                </li>
+            </ul>
+            <div class="customer-support">
+                <img src="customer support.webp">
+                <button>Get Support</button>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="header">
+                <div class="topic-date">
+                    <h3>Analytics</h3>
+                    <div id="date">
+                        <p>01.08.2022 - 31.08.2022</p> 
+                        <i class="fa fa-calendar-day calendar"></i>
+                    </div>
+                </div>
+                <div class="profile-theme">
+                    <div class="theme" id="theme">
+                        <i class="fa fa-sun"></i>
+                        <div id="theme-toggler">
+                            <div id="tiny-ball"></div>
+                        </div>
+                        <i class="fa fa-moon"></i>
+                    </div>
+                    <div class="profile">
+                        <img src="Profile.jpeg">
+                        <p>Rohan Samuel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="top-container">
+                <div class="orders-month-total">
+                    <div class="orders simple-container">
+                        <div class="name-icon">
+                            <p>Orders</p>
+                            <i class="fa fa-copy"></i>
+                        </div> 
+                        <p class="numbers">201</p>  
+                        <div class="rate-of-change">
+                            <i class="fa fa-arrow-up arrow-up"></i>
+                            <p class="arrow-up percentage">8.2%</p>
+                            <p class="from-text">since last month</p>
+                        </div>                     
+                    </div>
+                    <div class="month-total simple-container">
+                        <div class="name-icon">
+                            <p>Month Total</p>
+                            <i class="fa fa-dollar-sign"></i>
+                        </div>
+                        <p class="numbers">25410</p>
+                        <div class="rate-of-change">
+                            <i class="fa fa-arrow-down arrow-down"></i>
+                            <p class="arrow-down percentage">0.2%</p>
+                            <p class="from-text">since last month</p>
+                        </div>       
+                    </div>
+                </div>
+                <div class="approved-revenue">
+                    <div class="approved simple-container">
+                        <div class="name-icon">
+                            <p>Approved</p>
+                            <i class="fa fa-square-check"></i>
+                        </div>
+                        <p class="numbers">36</p>
+                        <div class="rate-of-change">
+                            <i class="fa fa-arrow-up arrow-up"></i>
+                            <p class="arrow-up percentage">3.4%</p>
+                            <p class="from-text">since last month</p>
+                        </div>       
+                    </div>
+                    <div class="revenue simple-container">
+                        <div class="name-icon">
+                            <p>Revenue</p>
+                            <i class="fa fa-wallet"></i>
+                        </div>
+                        <p class="numbers">1352</p>
+                        <div class="rate-of-change">
+                            <i class="fa fa-arrow-down arrow-down"></i>
+                            <p class="arrow-down percentage">1.2%</p>
+                            <p class="from-text">since last month</p>
+                        </div>       
+                    </div>
+                </div>
+                <div class="users piechart-holder">
+                    <p class="topic">Users</p>
+                    <p class="numbers">4.890</p>
+                    <p class="from-text">since last month</p>
+                    <div class="piechart">
+                        <div class="chart-values">
+                            <div class="color-palettes">
+                                <div class="palette-row">
+                                    <div class="palette c11"></div>
+                                    <b>62%</b>
+                                    <p>New</p>
+                                </div>
+                                <div class="palette-row">
+                                    <div class="palette c12"></div>
+                                    <b>26%</b>
+                                    <p>Returning</p>
+                                </div>
+                                <div class="palette-row">
+                                    <div class="palette c13"></div>
+                                    <b>12%</b>
+                                    <p>Inactive</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart1">
+                            <div class="white-circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscriptions piechart-holder">
+                    <p class="topic">Subscriptions</p>
+                    <p class="numbers">1.201</p>
+                    <p class="from-text">since last month</p>
+                    <div class="piechart">
+                        <div class="chart-values">
+                            <div class="color-palettes">
+                                <div class="palette-row">
+                                    <div class="palette c21"></div>
+                                    <b>70%</b>
+                                    <p>Paid</p>
+                                </div>
+                                <div class="palette-row">
+                                    <div class="palette c22"></div>
+                                    <b>30%</b>
+                                    <p>Trial</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart2">
+                            <div class="white-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="sales-dynamics">
+                <div class="topic-years">
+                    <div class="topic">Sales Dynamics</div>
+                    <select>
+                        <option class="year">2024</option>
+                        <option class="year">2023</option>
+                        <option class="year">2022</option>
+                        <option class="year">2021</option>
+                        <option class="year">2020</option>
+                    </select>
+                </div>
+                <div class="barchart">
+                    <ul>
+                        <li class="bar-chart-values">400k</li>
+                        <li class="bar-chart-values">300k</li>
+                        <li class="bar-chart-values">200k</li>
+                        <li class="bar-chart-values">100k</li>
+                        <li class="bar-chart-values" id="zero">0</li>
+                    </ul>
+                    <div class="graph">
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:65px;"></div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:40px;"></div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:70px;"></div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:54px;"></div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:80px;"></div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:60px;"></div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:60px;"></div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:25px;"></div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:70px;"></div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:80px;"></div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:90px;"></div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progress-value" style="width:100px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

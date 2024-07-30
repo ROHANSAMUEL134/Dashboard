@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+body{
+    padding:10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+    border-radius:15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    height: 615px;
+    display: flex;
+}
+
+.item .fa{
+    margin-right: 10px;
+}
+
+ul{
+    transform: translateX(-15px);
+}
+
+#left-container-equator{
+    border:none;
+    background-color: rgb(236, 236, 236);
+    height:3px;
+}
+
+#logo{
+    width:30px;
+    border-radius: 50%;
+}
+
+#brand{
+    transform: translate(5px,3px);
+    font-weight: 500;
+    font-size: large;
+}
+
+.brand-logo{
+    margin: 50px 20px 50px 30px;
+    display: flex;
+}
+
+.item{
+    color: rgb(65, 65, 65);
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.customer-support{
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer-support img{
+    width:30vh;
+}
+
+.customer-support button{
+    width: 100px;
+    padding:10px;
+    background-color: #4578F9;
+    color:antiquewhite;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+}
+
+.right-container{
+    background-color: rgb(236, 236, 236);
+    width:90%;
+    padding-left:10vh;
+    padding-top: 2vh;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topic-date{
+    display: flex;
+    justify-content: space-around;
+}
+
+.topic-date h3{
+    font-weight: 600;
+    font-size: 4vh;
+}
+
+#date{
+    margin-left:10vh;
+    margin-top:4.5vh;
+    display: flex;
+    background-color: #fff;
+    padding:0px 5px;
+    border-radius: 10px;
+    max-height: 3vh;
+    min-width:25vh;
+    color:rgb(82, 82, 82);
+}
+
+#date p{
+    font-size: 13px;
+    transform: translateY(-11px);
+}
+
+.calendar{
+    transform: translate(8px,3px);
+    font-size: small;
+}
+
+.theme{
+    display: flex;
+    font-size: 15px;
+    color:rgb(131, 128, 128);
+    min-width: 70px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#theme-toggler{
+    height: 16px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+#tiny-ball{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color:  #4578F9;
+    float:left;
+    margin: 1px;
+}
+
+.profile-theme{
+    display: flex;
+    min-width:50vh;
+    justify-content: space-between;
+}
+
+.profile{
+    display: flex;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.profile img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transform: translate(-10px, 7px);
+}
+
+.top-container{
+    display: flex;
+    margin-left: -12px;
+}
+
+.simple-container{
+    width: 210px;
+    height: 100px;
+    background-color: #fff;
+    margin: 8px;
+    border-radius: 10px;
+    padding:14px;
+}
+
+.orders-month-total, .approved-revenue{
+    display: flex;
+    flex-direction: column;
+}
+
+.piechart-holder{
+    width: 210px;
+    height: 215px;
+    padding-left: 14px;
+    padding-right: 8px;
+    margin: 8px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.simple-container p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:1px;    
+}
+
+.name-icon{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.name-icon i{
+    font-size: 25px;
+}
+
+.simple-container .numbers, .piechart-holder .numbers{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.piechart-holder .numbers{
+    margin-top: -10px;
+}
+
+.rate-of-change{
+    display: flex;
+    transform: translateY(-15px);
+    font-size: 15px;
+}
+
+.from-text{
+    color: rgb(199, 195, 195);
+}
+
+.piechart-holder .from-text{
+    font-weight: 700;
+}
+
+.rate-of-change .from-text{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.piechart-holder .from-text{
+    margin-top: -30px;
+    font-size: 12px;
+}
+
+.rate-of-change .percentage{
+    transform: translate(3px,-2px);
+}
+
+.arrow-up{
+    color:rgb(27, 214, 27);
+}
+
+.arrow-down{
+    color:red;
+}
+
+.piechart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.piechart-holder .topic{
+    font-weight: 600;
+}
+
+.chart1{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(
+        from 340deg,
+        #FBBC11 0% 65%,
+        #fff 65% 67%,
+        #fddc81 67% 88%,
+        #fff 88% 90%,
+        #f5ecd3 90% 98%,
+        #fff 98% 100%
+    );
+}
+
+.chart2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(
+        from 340deg,
+        #4578F9 0% 75%,
+        #fff 75% 77%,
+        #8aabff 77% 98%,
+        #fff 98% 100%
+    );
+}
+
+.white-circle{
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+    background-color: #fff;  
+}
+
+.color-palettes{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.palette{
+    width:15px;
+    height: 10px;
+    border-radius: 10px;
+    transform: translate(-2px,2px);
+}
+
+.palette-row{
+    display: flex;
+    margin-top:-6px;
+}
+
+.palette-row p{
+    margin-top: 0px;
+    font-size: 12px;
+    color: rgb(163, 163, 163)
+}
+
+.palette-row b{
+    font-size: 12px;
+    color: rgb(59, 59, 59);
+}
+
+.c11{
+    background-color:  #FBBC11;
+}
+
+.c12{
+    background-color: #fddc81;
+}
+
+.c13{
+    background-color: #f5ecd3;
+}
+
+.c21{
+    background-color:#4578F9;
+}
+
+.c22{
+    background-color:#8aabff;
+}
+
+.sales-dynamics{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 10px;
+    width: 47%;
+    margin-left: -4px;
+}
+
+.topic, .topic-years select{
+    font-weight: 500;
+}
+
+.topic-years{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topic-years select{
+    border: none;
+}
+
+.topic-years select:focus{
+    outline: none;
+}
+
+.bar-chart-values{
+    list-style: none;
+    color:rgb(82, 82, 82);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#zero{
+    transform: translateX(10px);
+}
+
+.barchart{
+    display: flex;
+}
+
+.graph{
+    transform: rotateZ(-90deg);
+    margin-top:-130px;
+    margin-left: 110px;
+}
+
+.graph .progressbar{
+    width: 120px;
+    height: 8px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.progressbar .progress-value{
+    height: 8px;
+    background-color: #4578F9;
+    border-radius: 10px;
+}
+
