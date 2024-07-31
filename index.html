@@ -5,6 +5,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -116,7 +117,7 @@
                     <div class="revenue simple-container">
                         <div class="name-icon">
                             <p>Revenue</p>
-                            <i class="fa fa-wallet"></i>
+                            <i class="fa fa-credit-card"></i>
                         </div>
                         <p class="numbers">1352</p>
                         <div class="rate-of-change">
@@ -130,23 +131,24 @@
                     <p class="topic">Users</p>
                     <p class="numbers">4.890</p>
                     <p class="from-text">since last month</p>
+                    <br><br>
                     <div class="piechart">
                         <div class="chart-values">
                             <div class="color-palettes">
                                 <div class="palette-row">
                                     <div class="palette c11"></div>
                                     <b>62%</b>
-                                    <p>New</p>
+                                    <p>&nbsp;New</p>
                                 </div>
                                 <div class="palette-row">
                                     <div class="palette c12"></div>
                                     <b>26%</b>
-                                    <p>Returning</p>
+                                    <p>&nbsp;Returning</p>
                                 </div>
                                 <div class="palette-row">
                                     <div class="palette c13"></div>
                                     <b>12%</b>
-                                    <p>Inactive</p>
+                                    <p>&nbsp;Inactive</p>
                                 </div>
                             </div>
                         </div>
@@ -159,18 +161,19 @@
                     <p class="topic">Subscriptions</p>
                     <p class="numbers">1.201</p>
                     <p class="from-text">since last month</p>
+                    <br><br>
                     <div class="piechart">
                         <div class="chart-values">
                             <div class="color-palettes">
                                 <div class="palette-row">
                                     <div class="palette c21"></div>
                                     <b>70%</b>
-                                    <p>Paid</p>
+                                    <p>&nbsp;Paid</p>
                                 </div>
                                 <div class="palette-row">
                                     <div class="palette c22"></div>
                                     <b>30%</b>
-                                    <p>Trial</p>
+                                    <p>&nbsp;Trial</p>
                                 </div>
                             </div>
                         </div>
@@ -181,64 +184,146 @@
                 </div>
             </div>
             <br>
-            <div class="sales-dynamics">
-                <div class="topic-years">
-                    <div class="topic">Sales Dynamics</div>
-                    <select>
-                        <option class="year">2024</option>
-                        <option class="year">2023</option>
-                        <option class="year">2022</option>
-                        <option class="year">2021</option>
-                        <option class="year">2020</option>
-                    </select>
+            <div class="right-bottom-container">
+                <div class="barchart-linegraph">
+                    <div class="sales-dynamics">
+                        <div class="topic-years">
+                            <div class="topic">Sales Dynamics</div>
+                            <select>
+                                <option class="year">2024</option>
+                                <option class="year">2023</option>
+                                <option class="year">2022</option>
+                                <option class="year">2021</option>
+                                <option class="year">2020</option>
+                            </select>
+                        </div>
+                        <div class="barchart">
+                            <ul>
+                                <li class="bar-chart-values">400k</li>
+                                <li class="bar-chart-values">300k</li>
+                                <li class="bar-chart-values">200k</li>
+                                <li class="bar-chart-values">100k</li>
+                                <li class="bar-chart-values" id="zero">0</li>
+                            </ul>
+                            <div class="graph">
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:65px;"></div>
+                                </div>
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:40px;"></div>
+                                </div>
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:70px;"></div>
+                                </div>
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:54px;"></div>
+                                </div>
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:80px;"></div>
+                                </div>
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:60px;"></div>
+                                </div>
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:60px;"></div>
+                                </div>
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:25px;"></div>
+                                </div>
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:70px;"></div>
+                                </div>
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:80px;"></div>
+                                </div>
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:90px;"></div>
+                                </div>
+                                <div class="progressbar">
+                                    <div class="progress-value" style="width:100px;"></div>
+                                </div>
+                            </div>
+                            <div class="months">
+                                <ul>
+                                    <li>JAN</li>
+                                    <li>FEB</li>
+                                    <li>MAR</li>
+                                    <li>APR</li>
+                                    <li>MAY</li>
+                                    <li>JUN</li>
+                                    <li>JUL</li>
+                                    <li>AUG</li>
+                                    <li>SEP</li>
+                                    <li>OCT</li>
+                                    <li>NOV</li>
+                                    <li>DEC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="sales-dynamics overall-user-activity">
+                        <div class="topic-years">
+                            <div class="topic">Overall User Activity</div>
+                            <select>
+                                <option class="year">2024</option>
+                                <option class="year">2023</option>
+                                <option class="year">2022</option>
+                                <option class="year">2021</option>
+                                <option class="year">2020</option>
+                            </select>
+                        </div>
+                        <div id="curve_chart" style="width: 478px; height: 250px"></div>
+                    </div>
                 </div>
-                <div class="barchart">
-                    <ul>
-                        <li class="bar-chart-values">400k</li>
-                        <li class="bar-chart-values">300k</li>
-                        <li class="bar-chart-values">200k</li>
-                        <li class="bar-chart-values">100k</li>
-                        <li class="bar-chart-values" id="zero">0</li>
-                    </ul>
-                    <div class="graph">
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:65px;"></div>
+                <div class="funds-customer-order">
+                    <div class="funds">
+                        <div class="paid-invoices"> 
+                            <div class="icon-progress">
+                                <i class="fa fa-wallet"></i>
+                                <div class="funds-progress progress1">
+                                    <div class="inner-circle">
+                                        <p class="progress-percentage">+15%</p>
+                                        <div class="pointer-circle purple"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Paid Invoices</p>
+                            <p>$30256.23</p>
+                            <p>Current Financial Year</p>
                         </div>
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:40px;"></div>
+                        <div class="funds-received">
+                            <div class="icon-progress">
+                                <i class="fa fa-money-check-dollar"></i>
+                                <div class="funds-progress progress2">
+                                    <div class="inner-circle">
+                                        <p class="progress-percentage">+59%</p>
+                                        <div class="pointer-circle green"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Funds Received</p>
+                            <p>$150256.23</p>
+                            <p>Current Financial Year</p>
                         </div>
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:70px;"></div>
+                    </div>
+                    <div class="customer-order">
+                        <div class="topic-icon">
+                            <p>Customer Orders</p>
+                            <i class="fa fa-refresh"></i>
                         </div>
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:54px;"></div>
-                        </div>
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:80px;"></div>
-                        </div>
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:60px;"></div>
-                        </div>
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:60px;"></div>
-                        </div>
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:25px;"></div>
-                        </div>
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:70px;"></div>
-                        </div>
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:80px;"></div>
-                        </div>
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:90px;"></div>
-                        </div>
-                        <div class="progressbar">
-                            <div class="progress-value" style="width:100px;"></div>
+                        <div class="topics">
+                            <ul>
+                                <li>Profile</li>
+                                <li>Address</li>
+                                <li>Date</li>
+                                <li>Status</li>
+                                <li>Price</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
