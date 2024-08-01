@@ -224,7 +224,7 @@ ul{
 }
 
 .from-text{
-    color: rgb(199, 195, 195);
+    color: #c7c3c3;
 }
 
 .piechart-holder .from-text{
@@ -490,6 +490,10 @@ ul{
     border-radius: 50%;
 }
 
+.abc{
+    color: rgb(201, 37, 201);
+}
+
 .pointer-circle{
     height:8px;
     width:8px;
@@ -579,4 +583,14 @@ ul{
     list-style: none;
     font-size: 14px;
     color: rgb(168, 168, 168);
+}
+
+.customer{
+    display: flex;
+}
+
+.customer img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
